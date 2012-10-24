@@ -146,7 +146,8 @@ default['mysql']['tunable']['innodb_log_buffer_size']          = "8M"
 default['mysql']['tunable']['query_cache_limit']    = "1M"
 default['mysql']['tunable']['query_cache_size']     = "16M"
 
-default['mysql']['tunable']['log_slow_queries']     = "/var/log/mysql/slow.log"
+default['mysql']['tunable']['slow_query_log']     = "OFF"
+default['mysql']['tunable']['slow_query_log_file']     = "/var/log/mysql/slow.log"
 default['mysql']['tunable']['long_query_time']      = 2
 
 default['mysql']['tunable']['expire_logs_days']     = 10
